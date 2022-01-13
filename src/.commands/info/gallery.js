@@ -3,7 +3,7 @@ const ReactionMenu = require('../ReactionMenu.js');
 const { MessageEmbed } = require('discord.js');
 const art = [
   'https://raw.githubusercontent.com/sabattle/CalypsoBot/develop/data/images/Calypso_Full_Signature.png',
-  'https://raw.githubusercontent.com/sabattle/CalypsoBot/develop/data/images/Calypso.png',
+  'https://titan.game/titangamelogo.png',
   'https://raw.githubusercontent.com/sabattle/CalypsoBot/develop/data/images/Calypso_WIP.png',
   'https://raw.githubusercontent.com/sabattle/CalypsoBot/develop/data/images/Calypso_WIP_2.png',
   'https://raw.githubusercontent.com/sabattle/CalypsoBot/develop/data/images/Calypso_WIP_3.png'
@@ -15,7 +15,7 @@ module.exports = class GalleryCommand extends Command {
       name: 'gallery',
       aliases: ['art'],
       usage: 'gallery',
-      description: 'Displays a gallery of Calypso\'s art.',
+      description: 'Displays a gallery of Titan Game\'s art.',
       type: client.types.INFO,
       clientPermissions: ['SEND_MESSAGES', 'EMBED_LINKS', 'ADD_REACTIONS']
     });

@@ -217,7 +217,7 @@ class Client extends Discord.Client {
       .setDescription(`\`\`\`diff\n- System Failure\n+ ${errorMessage}\`\`\``)
       .setTimestamp()
       .setColor(guild.me.displayHexColor);
-    systemChannel.send(embed);
+    systemChannel.send({ embeds: [embed] });
   }
 }
 

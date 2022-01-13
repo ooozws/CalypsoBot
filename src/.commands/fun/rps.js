@@ -27,7 +27,7 @@ module.exports = class RockPaperScissorsCommand extends Command {
     const embed = new MessageEmbed()
       .setTitle(`${message.member.displayName} vs. Calypso`)
       .addField('Your Choice:', res[userChoice], true)
-      .addField('Calypso\'s Choice', res[botChoice], true)
+      .addField('Titan Game\'s Choice', res[botChoice], true)
       .addField('Result', result, true)
       .setFooter(message.member.displayName,  message.author.displayAvatarURL({ dynamic: true }))
       .setTimestamp()

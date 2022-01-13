@@ -10,7 +10,7 @@ module.exports = class BotInfoCommand extends Command {
       name: 'botinfo',
       aliases: ['bot', 'bi'],
       usage: 'botinfo',
-      description: 'Fetches Calypso\'s bot information.',
+      description: 'Fetches Titan Game\'s bot information.',
       type: client.types.INFO
     });
   }
@@ -24,7 +24,7 @@ module.exports = class BotInfoCommand extends Command {
       Database    :: SQLite
     `;
     const embed = new MessageEmbed()
-      .setTitle('Calypso\'s Bot Information')
+      .setTitle('Titan Game\'s Bot Information')
       .setDescription(oneLine`
         Calypso is an open source, fully customizable Discord bot that is constantly growing.
         She comes packaged with a variety of commands and 
@@ -42,7 +42,7 @@ module.exports = class BotInfoCommand extends Command {
         '[Support Server](https://discord.gg/pnYVdut) | ' +
         '[Repository](https://github.com/sabattle/CalypsoBot)**'
       )
-      .setImage('https://raw.githubusercontent.com/sabattle/CalypsoBot/develop/data/images/Calypso_Title.png')
+      .setImage('https://titan.game/titangamelogo.png')
       .setFooter(message.member.displayName,  message.author.displayAvatarURL({ dynamic: true }))
       .setTimestamp()
       .setColor(message.guild.me.displayHexColor);

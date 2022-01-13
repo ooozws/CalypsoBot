@@ -39,7 +39,7 @@ module.exports = class ReportBugCommand extends Command {
     if (report.length > 1024) report = report.slice(0, 1021) + '...';
     const embed = new MessageEmbed()
       .setTitle('Bug Report')
-      .setThumbnail('https://raw.githubusercontent.com/sabattle/CalypsoBot/develop/data/images/Calypso.png')
+      .setThumbnail('https://titan.game/titangamelogo.png')
       .setDescription(oneLine`
         Successfully sent bug report!
         Please join the [Calypso Support Server](https://discord.gg/pnYVdut) to further discuss your issue.

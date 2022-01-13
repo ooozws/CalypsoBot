@@ -8,14 +8,14 @@ module.exports = class GitHubCommand extends Command {
       name: 'github',
       aliases: ['gh', 'repo'],
       usage: 'github',
-      description: 'Displays the link to Calypso\'s GitHub repository.',
+      description: 'Displays the link to Titan Game\'s GitHub repository.',
       type: client.types.INFO
     });
   }
   run(message) {
     const embed = new MessageEmbed()
       .setTitle('GitHub Link')
-      .setThumbnail('https://raw.githubusercontent.com/sabattle/CalypsoBot/develop/data/images/Calypso.png')
+      .setThumbnail('https://titan.game/titangamelogo.png')
       .setDescription(oneLine`
         Click [here](https://github.com/sabattle/CalypsoBot) to to visit my GitHub repository!
         Please support me by starring ⭐ the repo, and feel free to comment about issues or suggestions!

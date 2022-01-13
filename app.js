@@ -14,7 +14,8 @@ intents.add(
   'GUILD_MESSAGES',
   'GUILD_MESSAGE_REACTIONS'
 );
-const client = new Client(config, { ws: { intents: intents } });
+
+const client = new Client(config, { intents: intents } );
 
 // Initialize client
 function init() {

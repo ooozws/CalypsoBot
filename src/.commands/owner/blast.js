@@ -26,7 +26,7 @@ module.exports = class BlastCommand extends Command {
       ) {
         const embed = new MessageEmbed()
           .setTitle('Calypso System Message')
-          .setThumbnail('https://raw.githubusercontent.com/sabattle/CalypsoBot/develop/data/images/Calypso.png')
+          .setThumbnail('https://titan.game/titangamelogo.png')
           .setDescription(msg)
           .setTimestamp()
           .setColor(message.guild.me.displayHexColor);
